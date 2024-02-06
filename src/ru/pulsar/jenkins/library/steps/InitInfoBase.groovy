@@ -62,7 +62,7 @@ class InitInfoBase implements Serializable {
                 } else {
                     config.initInfoBaseOptions.additionalInitializationSteps.each {
                         Logger.println("Первичная инициализация командой ${it}")
-                        VRunner.exec("$vrunnerPath ${it} --ibconnection \"/F./build/ib\"")
+                        VRunner.exec("$vrunnerPath ${it}")
                     }
                 }
             }
